@@ -60,8 +60,7 @@ Dataset split: **80/20 (stratified)**.
 Models trained:  
 - Decision Tree  
 - Random Forest  
-- Multilayer Perceptron (MLP)  
-- XGBoost  
+- Multilayer Perceptron (MLP)   
 - Support Vector Machine (SVM)  
 - Autoencoder (unsupervised, trained on legit samples)  
 
@@ -95,7 +94,7 @@ The notebooks generate rich visualizations for **EDA** and **model understanding
 
 ## 🔹 Results / Key Findings
 ✔️ Lexical features (URL length, digit count, special chars, subdomains) strongly correlate with phishing labels.  
-✔️ **Tree ensembles (Random Forest, XGBoost)** delivered the most robust results.  
+✔️ **Tree ensembles (Random Forest)** delivered the most robust results.  
 ✔️ Final retrained model: `best_model_retrained.pkl`.  
 ✔️ Detailed metrics & reports are in `Phising_Website_Detection.ipynb`.  
 
@@ -115,8 +114,8 @@ In this project, we successfully demonstrated how **lexical features of URLs** c
 Key takeaways:  
 - Extracted **length-based, character-based, and domain-related features** from phishing and legitimate URLs.  
 - Performed **data preprocessing, visualization, and correlation analysis** to understand feature importance.  
-- Trained multiple supervised ML models (Decision Tree, Random Forest, XGBoost, SVM, MLP) and an Autoencoder, then compared their performance.  
-- Identified **tree-based ensemble models (Random Forest, XGBoost)** as top performers for phishing detection.  
+- Trained multiple supervised ML models (Decision Tree, Random Forest, SVM, MLP) and an Autoencoder, then compared their performance.  
+- Identified **tree-based ensemble models (Random Forest)** as top performers for phishing detection.  
 - Saved the **best retrained model (`best_model_retrained.pkl`)** for future inference and deployment.  
 
 This work lays a strong foundation for building **browser extensions, web applications, or APIs** that can perform **real-time phishing detection**. Future improvements can include WHOIS/domain age features, page content-based features, and deployment in security toolchains.  
